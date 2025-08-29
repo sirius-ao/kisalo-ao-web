@@ -1,0 +1,15 @@
+:host{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 68px 1fr;
+
+    head{
+        width: 100vw;
+        background-color: red;
+        border-bottom: 1px solid #000;
+    }
+
+    main{
+        width: 100vw;
+    }
+}
