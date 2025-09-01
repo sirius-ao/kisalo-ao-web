@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:20-alpine AS build  # ← Adicione 'AS build' aqui
 
 WORKDIR /app
 COPY package*.json ./
@@ -8,4 +8,4 @@ RUN npm run build
 
 # For production
 FROM nginx:alpine
-COPY --from=build /app/dist/kisalo/browser /usr/share/nginx/html
+COPY --from=build /app/dist/kisalo/browser /usr/share/nginx/html  # ← Agora vai funcionar
