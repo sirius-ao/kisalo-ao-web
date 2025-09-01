@@ -1,0 +1,6 @@
+<aside [ngClass]="menuState() ? 'showAside': 'hideAside' " >
+    <div class="container">
+        <p> {{ menuState()}} </p>
+        <button (click)="changeMenuState()" class="closeButton"> <img src="icon/close-icon.png" alt=""> </button>
+    </div>
+</aside>

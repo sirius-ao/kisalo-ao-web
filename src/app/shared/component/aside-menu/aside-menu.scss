@@ -1,0 +1,57 @@
+:host{ 
+    position: relative;  
+
+    aside{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: all .2s;
+
+        .container{
+            height: 100%;
+            transition: all .4s;
+            padding: 48px 16px;
+        }
+
+        .closeButton{
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 48px;
+            height: 48px;
+            background-color: #FFFFFF;
+            border-radius: 50px;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: all .2s;
+            
+            &:hover{ opacity: 1 }
+            &:active { opacity: 0.9 }
+
+            img{ width: 24px; height: 24px }
+        }
+    }
+
+    .showAside{ 
+        background-color: #18181890;
+        
+        .container{
+            background-color: #FFFFFF;
+            width: 64%;
+            opacity: 1;
+        }
+    }
+
+    .hideAside{ 
+        background-color: #18181800;
+        pointer-events: none;
+
+        .container{
+            width: 54%;
+            opacity: 0;
+            overflow: hidden;
+        }
+    }
+}

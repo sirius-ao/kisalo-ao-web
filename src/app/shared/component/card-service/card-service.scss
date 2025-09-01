@@ -4,26 +4,26 @@
     gap: 6px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 12px;
+    padding: 8px;
 
     .title{
-        // font-size: 14px;
+         font-size: 14px;
         font-weight: 800;
         color: #181818;
         font-family: "poppins-semibold";
     }
 
     .desc{
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .avaliation{
         font-size: 10px;
-        margin-top: 8px;
+        // margin-top: 8px;
     }
 
     button{
-        margin-top: 8px;
+        margin-top: 4px;
         height: 32px;
         cursor: pointer;
         padding: 0 16px;
@@ -52,7 +52,7 @@
     }
 
     .stars label {
-      font-size: 20px;
+      font-size: 16px;
       color: #ccc;
       cursor: pointer;
       transition: color 0.2s;
@@ -66,4 +66,35 @@
     .stars label:hover ~ label {
       color: #FFD700;
     }
+}
+
+
+
+@media screen and (min-width:700px) {
+  :host{
+
+    gap: 10px;
+    padding: 16px;
+
+    .title{
+      font-size: 16px;
+    }
+
+    .desc{
+      font-size: 14px;
+    }
+
+    .avaliation{
+      font-size: 12px;
+    }
+
+    .stars label {
+      font-size: 20px;
+    }
+
+    button{
+      height: 40px;
+      font-size: 14px;
+    }
+  }
 }

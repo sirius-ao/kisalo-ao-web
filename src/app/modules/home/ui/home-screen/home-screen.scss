@@ -4,7 +4,6 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    padding: 0 16px;
 
     .container-detalhes{
         display: flex;
@@ -14,6 +13,9 @@
         width: 96%;
         padding: 48px 0 32px 0;
 
+        span{
+            color: #FABE11;
+        }
     }
     
     .container-filter{
@@ -21,6 +23,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        padding: 0 16px;
     
         .container-input-button{
             display: grid;
@@ -78,9 +81,8 @@
 
     .main-button{
         height: 40px;
-        width: 72%;
+        width: 80%;
         margin: auto;
-
         margin-top: 8px;
         cursor: pointer;
         padding: 0 16px;
@@ -90,6 +92,92 @@
         font-size: 14px;
         border-radius: 4px;
         transition: all .2s;
+    }
+
+    .container-tres-passos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: centers;
+        gap: 64px;
+        margin-top: 0;
+        img{
+            width: 100%;
+        }
+    }
+
+    .testemunhos {
+        padding:64px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h2{
+            display: flex;
+            align-items: center;
+            gap: 38px;
+    
+            span{
+                display: flex;
+                width: 48px;
+                height: 3px;
+                background-color: #E93A00;
+            }
+        }
+    }
+
+    .mockup{
+        background: linear-gradient(to right, #E93A00, #FABE11);
+        padding: 64px 16px 0 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h1{ color: #FFF;}
+        p{ color: #FFF; text-align: center; }
+        img{
+            margin-top: 80px;
+            height: 639px;
+            margin-left: -20px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width:700px) {
+    :host{
+
+        .filtros{
+            button{
+                height: 40px;
+                padding: 0 24px;
+                font-size: 14px;
+            }
+        }
+
+        .container-card{
+            gap: 16px;
+        }
+
+        .container-detalhes{
+            width: 96%;
+            margin: auto;
+        }
+        br{
+            display: none;
+        }
+        .main-button{
+            height: 48px;
+            margin-top: 16px;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        .container-tres-passos{
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            margin-top: 48px;
+        }
 
     }
 }

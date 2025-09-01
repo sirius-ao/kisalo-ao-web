@@ -1,17 +1,20 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
+import { AsideMenu } from "../shared/component/aside-menu/aside-menu";
 import { Header } from "../shared/component/header/header";
 
 @Component({
   selector: 'app-module',
-  imports: [RouterOutlet, Header],
+  imports: [RouterOutlet, AsideMenu, Header],
   template: `
-    <head>
+    <header>
       <app-header />
-    </head>
+    </header>
     <main>
       <router-outlet />
     </main>
+
+    <app-aside-menu />
   `,
   styleUrls: ['./module.scss']
 })

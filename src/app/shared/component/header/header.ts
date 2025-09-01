@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AsideMenuService } from '../../service/aside-menu.service';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
+  constructor(protected _menuService:AsideMenuService){}
 
+  changeMenuState(){
+    this._menuService.changeState();
+  }
 }

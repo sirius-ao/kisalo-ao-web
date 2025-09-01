@@ -1,0 +1,170 @@
+:host{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    gap: 24px;
+    width: 100vw;
+    padding-top: 48px;
+
+    .subtitle{
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .inputContainer{
+        border: 1px solid #d1d1d1;
+        display: flex;
+        height: 54px;
+        display: grid;
+     
+        grid-template-columns: 24px auto;
+        gap: 16px;
+        align-items: center;
+        padding: 0 16px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 480px;
+
+        .icon{
+            width: 24px;
+            height: 24px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+
+        input{
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background-color: #FFF;
+            
+            &::placeholder{
+                color: #00000048;
+                letter-spacing: 0.3px;
+            }
+
+            &:focus > .inputContainer{
+                border: 1px solid #E93A00;
+            }
+        }
+
+        &:hover{
+            border: 1px solid #E93A00;
+        }
+    }
+
+    .main-button{
+        height: 54px;
+        font-size: 14px;
+        background-color: #E93A00;
+        width: 100%;
+        max-width: 480px;
+        color: #FFF;
+        font-weight: 500;
+        font-family: 'poppins-semibold';
+        opacity: 1;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover{ opacity: 0.8; }
+
+        &:active{ opacity: 1; }
+    }
+
+    .manterLogado{
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'poppins-light';
+        color: #00000080;
+        font-size: 14px;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        background-color: #fff;
+    }
+
+    .googleButton{
+        width: 100%;
+        max-width: 480px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+        font-family: 'poppins-semibold';
+        color: #404040;
+        background-color: #FFF;
+        border: 1px solid #d1d1d1;
+
+        opacity: 1;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover{ opacity: 0.8; }
+
+        &:active{ opacity: 1; }
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .registrarCom{
+        width: 100%;
+        max-width: 480px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            background-color: #FFF;
+            z-index: 1;
+            padding: 0 8px;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 100%;
+            height: 1px;
+            background-color: #d1d1d1;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #E93A00;
+    }
+}
+
+
+@media screen and (min-width:700px) { 
+    :host{
+        .inputContainer{
+            &::placeholder{
+            }    
+        }
+
+        .googleButton{
+            font-size: 16px;
+            height: 54px;
+        }
+
+        .main-button{
+            font-size: 16px;
+            height: 54px;
+
+        }
+    }
+}
