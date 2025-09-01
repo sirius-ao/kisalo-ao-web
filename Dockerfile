@@ -8,4 +8,4 @@ RUN npm run build
 
 # For production
 FROM nginx:alpine
-COPY --from=0 /app/dist/your-app-name /usr/share/nginx/html
+COPY --from=0 /app/dist/kisalo /usr/share/nginx/html 
