@@ -6,5 +6,23 @@
     justify-content: space-between;
     padding: 0 24px;
     height: 100%;
-    
+
+    .icon-card{
+        display: none;
+    }
+}
+
+@media screen and (min-width:765px) {
+    :host{
+        .icon-card{
+            background-color: transparent;
+            display: flex;
+            
+            img{
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+    }
 }
