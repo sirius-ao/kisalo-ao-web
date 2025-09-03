@@ -1,5 +1,5 @@
 import { Component, inject } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+import { RouterLink, RouterOutlet } from "@angular/router";
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
@@ -13,7 +13,9 @@ import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angula
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule,],
+    MatInputModule,
+      RouterLink
+  ],
     templateUrl: './steps-service.html',
     styleUrls: ['./steps-service.scss']
 })

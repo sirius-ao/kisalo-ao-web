@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
 
+    .br-md {
+            display: none;
+        }
+
     .container-detalhes{
         display: flex;
         flex-direction: column;
@@ -101,9 +105,7 @@
         justify-content: centers;
         gap: 64px;
         margin-top: 0;
-        img{
-            width: 100%;
-        }
+        
     }
 
     .testemunhos {
@@ -133,9 +135,9 @@
         gap: 16px;
         h1{ color: #FFF;}
         p{ color: #FFF; text-align: center; }
+
         img{
             margin-top: 80px;
-            height: 639px;
             margin-left: -20px;
         }
     }
@@ -143,9 +145,26 @@
 }
 
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:785px) {
     :host{
+        .br-sm{
+            display: none;
+        }
 
+        .br-md{
+            display: inline;
+        }
+
+        h1{
+            font-size: 38px;
+            line-height: 54px;
+        }
+        p{
+            font-size: 18px;
+            color: #00000090;
+            line-height: 26px;
+            font-weight: 400;
+        }
         .filtros{
             button{
                 height: 40px;
@@ -157,13 +176,15 @@
         .container-card{
             gap: 16px;
         }
+        .container-filter {
+            width: 82%;
 
+            
+
+        }
         .container-detalhes{
             width: 96%;
             margin: auto;
-        }
-        br{
-            display: none;
         }
         .main-button{
             height: 48px;

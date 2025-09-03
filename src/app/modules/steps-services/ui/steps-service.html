@@ -102,13 +102,13 @@
     </mat-step>
     <mat-step [stepControl]="secondFormGroup" label="Pagamento">
         <form [formGroup]="secondFormGroup">
-            <div class="container">
+            <div class="container-second-step">
                 <h1>Informações do pedido</h1>
                 <p class="cont">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
                 layout. The point of using.</p>
                 
                 <label for="dataMarcacao" class="containerInput">
-                    <input type="datetime-local" name="" id="dataMarcacao" placeholder="ojj">
+                    <input type="datetime-local" name="" id="dataMarcacao" placeholder="">
                 </label>
 
                 <textarea name="" id="" placeholder="Detalhe mais sobre o serviço..."></textarea>
@@ -127,8 +127,8 @@
         <div class="lastContainer">
             <img src="icon/check.png" alt="">
             <h1>Solicitação feita com sucesso!</h1>
-            <p>Esse processo ficará em espera nos históricos e o poderá terminar com o pagamento após a execução do trabalho.</p>
-            <button matButton matStepperNext class="primaryButton">Avança</button>
+            <p>Esse processo ficará em espera nos históricos e o <br> poderá terminar com o pagamento após a <br> execução do trabalho.</p>
+            <button routerLink="/" class="primaryButton">Finalizar</button>
         </div>
     </mat-step>
 </mat-stepper>
