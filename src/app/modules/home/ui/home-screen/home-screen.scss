@@ -6,8 +6,16 @@
     justify-content: center;
 
     .br-md {
-            display: none;
-        }
+        display: none;
+    }
+
+    .img-md {
+        display: inline;
+    }
+
+    .img-lg {
+        display: none;
+    }
 
     .container-detalhes{
         display: flex;
@@ -32,10 +40,12 @@
         .container-input-button{
             display: grid;
             gap: 16px;
-            grid-template-columns: 1fr 80px;
+            grid-template-columns: 1fr 96px;
 
             button{
                 background: linear-gradient(to right, #FABE11, #E93A00);
+                color: #FFFFFF;
+                font-weight: 500;
             }
 
             .container-input{
@@ -168,6 +178,14 @@
         .mockupMd{
             display: none;
         }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 16px;
+
+        }
     }
 
 }
@@ -278,6 +296,13 @@
             align-items: center;
             padding: 48px 64px 0;
 
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+            }
+
             .mockupSm{display: none;}
             .mockupMd{
                 margin-top: 80px;
@@ -287,5 +312,163 @@
 
         }
     }
+}
 
+@media screen and (min-width:1400px) {
+    :host{
+        .br-sm{
+            display: none;
+        }
+        .br-md{
+            display: none;
+        }
+
+        .container-detalhes{
+            padding-top: 116px;
+            padding-bottom: 64px;
+            width: 64%;
+            
+            p{
+                width: 724px;
+                margin: auto;
+            }
+        }
+
+
+        .container-filter{
+            .container-input-button{
+                width: 561px;
+            }
+            .filtros{
+                width: 718px;
+                margin: auto;
+                gap: 16px;
+
+                button{
+                    font-size: 16px;
+
+                    span{
+                        img{
+                            width: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-card {
+            gap: 24px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .main-button{
+         width: 272px;   
+        }
+
+       .nossa-visao{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 82px;
+            
+            h1{
+                text-align: start;
+                width: 684px;
+                margin: auto;
+            }
+
+            h2 {
+                display: flex;
+                align-items: flex-end;
+                gap: 38px;
+                align-items: center;
+                text-align: start;
+
+                span {
+                    display: flex;
+                    width: 48px;
+                    height: 3px;
+                    background-color: #E93A00;
+                }
+            }
+       }
+
+       .container-tres-passos{
+            justify-content: center;
+            gap: 72px;
+
+            .main{
+                width: 600px;
+            }
+
+            .minor{
+                width: 500px;
+            }
+
+            .img-md{
+                display: none;
+            }
+            .img-lg{
+                display: inline;
+            }
+
+       }
+
+       .testemunhos{
+            margin-top: 120px;
+            padding-bottom: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 82px;
+
+            h1 {
+                text-align: start;
+                width: 552px;
+                // margin: auto;
+            }
+
+            h2 {
+                display: flex;
+                align-items: flex-end;
+                gap: 38px;
+                align-items: center;
+                text-align: start;
+                width: 28%;
+
+                span {
+                    display: flex;
+                    width: 48px;
+                    height: 3px;
+                    background-color: #E93A00;
+                }
+            }
+       }
+
+       .mockup{
+           background-color: red;
+            margin: 64px 9%;
+            display: flex;
+            flex-direction: row-reverse;
+            height: 576px;
+            gap: 48px;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                h1, p{
+                    text-align: start;
+                }
+            }
+
+           .mockupMd{   
+                margin: 0 0 110px -64px;
+                width: 517px;
+           }
+       }
+    }
 }
