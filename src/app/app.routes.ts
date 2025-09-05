@@ -5,6 +5,7 @@ import { AppAuth } from './modules/auth/auth';
 import { SignInScreen } from './modules/auth/sign-in.screen/sign-in.screen';
 import { SignUpScreen } from './modules/auth/sign-up.screen/sign-up.screen';
 import { StepsService } from './modules/steps-services/ui/steps-service';
+import { DetalhesSolicitacao } from './modules/steps-services/ui/detalhes-solicitacao/detalhes-solicitacao';
 
 export const routes: Routes = [
     {
@@ -25,8 +26,11 @@ export const routes: Routes = [
     {
         path: 'steps-service',
         component: StepsService,
-        children: [
-            
-        ]
+       
+    },
+    {
+        path: 'detalhes-solicitacao',
+        component: DetalhesSolicitacao
     }
+
 ];
