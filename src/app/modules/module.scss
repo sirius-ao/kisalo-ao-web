@@ -12,14 +12,13 @@
 
     main{
         width: 100vw;
-        // padding: 0 16px;
         background-color: #FFF;
 
     }
 }
 
-@media screen and (min-width:1400px) {
-    :host{
+@media screen and (min-width:765px) {
+    :host {
         grid-template-rows: 108px 1fr;
     }
 }
