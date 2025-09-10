@@ -13,9 +13,8 @@ export const routes: Routes = [
         path: '',
         component: AppModule,
         children: [
-            { path: '', redirectTo: 'home', pathMatch: 'full'},
             { path: 'home', component: HomeScreen },
-            { path: 'servicos', component: ServicoScreen },
+            { path: 'servicos', component: ServicoScreen }
         ]
     },
     {
@@ -35,8 +34,10 @@ export const routes: Routes = [
         path: 'detalhes-solicitacao',
         component: DetalhesSolicitacao
     },
-    {
-        path: '**', redirectTo: ''
-    }
 
+    {
+        path: '**',
+        redirectTo: '',
+        pathMatch: 'full'
+    }
 ];
