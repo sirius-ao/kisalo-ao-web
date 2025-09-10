@@ -11,10 +11,15 @@ import { ServicoScreen } from './modules/servico/servico-screen/servico';
 export const routes: Routes = [
     {
         path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: '',
         component: AppModule,
         children: [
             { path: 'home', component: HomeScreen },
-            { path: 'servicos', component: ServicoScreen }
+            { path: 'servicos', component: ServicoScreen },
         ]
     },
     {
@@ -25,11 +30,7 @@ export const routes: Routes = [
             {path: 'signUp', component: SignUpScreen}
         ]
     },
-    {
-        path: 'steps-service',
-        component: StepsService,
-       
-    },
+    { path: 'steps', component: StepsService},
     {
         path: 'detalhes-solicitacao',
         component: DetalhesSolicitacao
