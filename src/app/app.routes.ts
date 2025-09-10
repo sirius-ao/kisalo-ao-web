@@ -34,6 +34,7 @@ export const routes: Routes = [
     {
         path: 'detalhes-solicitacao',
         component: DetalhesSolicitacao
-    }
+    },
+    { path: '**', redirectTo: 'home' }
 
 ];
