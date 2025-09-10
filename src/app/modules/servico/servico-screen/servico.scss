@@ -17,6 +17,10 @@
             display: none;
         }
 
+        .aside{
+            display: none;
+        }
+
     
         .container-detalhes {
             display: flex;
@@ -134,8 +138,9 @@
         position: relative;
         align-items: start;
 
-        
         .aside {
+            display: flex;
+            flex-direction: column;
             padding: 16px;
             height: 80vh;
             background-color: #F9F9F933;
