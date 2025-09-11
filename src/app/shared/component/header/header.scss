@@ -6,5 +6,113 @@
     justify-content: space-between;
     padding: 0 24px;
     height: 100%;
-    
+
+    div{
+        display: none;
+    }
+
+    .icon-card{
+        display: none;
+    }
+}
+
+@media screen and (min-width:765px) {
+    :host{
+        div{
+            display: flex;
+
+            ul{
+                display: none;
+            }
+        }
+        
+        .icon-card{
+            background-color: transparent;
+            display: flex;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1400px){
+    :host{
+        padding: 0 110px;
+
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 32px;
+                list-style: none;
+                font-size: 16px;
+                font-weight: 400;
+
+                li{
+                    color: #384960;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #E93A00;
+                    }
+                    &:active{
+                        color: #e93a00b6;
+                    }
+                }
+
+                .active{
+                    position: relative;
+                    font-weight: 400;
+                    color: #E93A00;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        height: 1.4px;
+                        // background-color: #E93A00;
+                    }
+                }
+
+                button{
+                    background-color: #FFF;
+                    width: 187px;
+                    height: 48px;
+                    border: 1px solid #384960;
+                    border-radius: 50px;
+                    position: relative;
+                    font-weight: 500;
+                    font-size: 16px;
+
+                    span{
+                        position: absolute;
+                        display: block;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 44px;
+                        height: 44px;
+                        background-color: #E93A00;
+                        border-radius: 50px;
+                        top: -6px;
+                        right: -10px;
+                    }
+                }
+            }
+        }
+
+        .icon-button{
+            display: none;
+        }
+    }
 }

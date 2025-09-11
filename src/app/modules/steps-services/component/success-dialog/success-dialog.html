@@ -1,0 +1,9 @@
+
+<div class="container" [ngClass]="state ? 'showContainer':'hideContainer' ">
+    <div class="dialog " [ngClass]="state ? 'show': 'hide' ">
+        <img src="icon/check.png" alt="">
+        <h1>Solicitação feita com sucesso!</h1>
+        <p>Esse processo ficará em espera nos históricos e o poderá terminar com o pagamento após a execução do trabalho.</p>
+        <button class="primaryButton" (click)="changeAlert()">Finalizar</button>
+    </div>
+</div>

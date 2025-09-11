@@ -1,134 +1,267 @@
 
-<mat-stepper [linear]="isLinear" #stepper>
-    <mat-step [stepControl]="firstFormGroup">
-        <form [formGroup]="firstFormGroup">
-            <ng-template matStepLabel>Descição</ng-template>
-
-            <div class="container">
-                <h1>Instalação eléctrica completa</h1>
-
-                <div class="container-service">
-                    <span>
-                        <p>Serviço</p>
-                        <p>20.000,00 AOA</p>
-                    </span>
-
-                    <span>
-                        <p>Deslocação</p>
-                        <p>Incluído</p>
-                    </span>
-
-                    <span class="start-container">
-                        <div class="stars">
-                            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
-                            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
-                            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
-                            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
-                            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+<div class="container-mobile">
+    <mat-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Descição</ng-template>
+    
+                <div class="container">
+                    <h1>Instalação eléctrica completa</h1>
+    
+                    <div class="main-container">
+                        <div class="container-service">
+                            <span>
+                                <p>Serviço</p>
+                                <p>20.000,00 AOA</p>
+                            </span>
+        
+                            <span>
+                                <p>Deslocação</p>
+                                <p>Incluído</p>
+                            </span>
+        
+                            <span class="start-container">
+                                <div class="stars">
+                                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                                </div>
+                                <p class="avaliation">4,5(+200 Avaliações)</p>
+                            </span>
+        
+                            <span class="container-destaque">
+                                <p>Total</p>
+                                <p>20.000,00 AOA</p>
+                            </span>
                         </div>
-                        <p class="avaliation">4,5(+200 Avaliações)</p>
-                    </span>
+        
+                        <div class="desc-service">
+                            <span class="cabecalho">
+                                <img src="icon/information.png" alt="">
+                                <p>O que está incluído</p>
+                            </span>
+                            <div>
+                                <span class="detalhes">
+                                    <img src="icon/tick-circle.png" alt="">
+                                    <div>
+                                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                                    </div>
+                                </span>
+                                <span class="detalhes">
+                                    <img src="icon/tick-circle.png" alt="">
+                                    <div>
+                                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                                    </div>
+                                </span>
+                                <span class="detalhes">
+                                    <img src="icon/tick-circle.png" alt="">
+                                    <div>
+                                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                                    </div>
+                                </span>
+                            </div>
 
-                    <span class="container-destaque">
-                        <p>Total</p>
-                        <p>20.000,00 AOA</p>
-                    </span>
+                            <hr>
+            
+                            <span class="cabecalho">
+                                <img src="icon/information.png" alt="">
+                                <p>O que não está incluído</p>
+                            </span>
+                            <div>
+                                <span class="detalhes">
+                                    <img src="icon/close-circle.png" alt="">
+                                    <div>
+                                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                                    </div>
+                                </span>
+                                <span class="detalhes">
+                                    <img src="icon/close-circle.png" alt="">
+                                    <div>
+                                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                                    </div>
+                                </span>
+                                <span class="detalhes">
+                                    <img src="icon/close-circle.png" alt="">
+                                    <div>
+                                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="spacing"></div>
+                    <p class="atention">
+                        Nota: O serviço segue normas de segurança eléctrica. A duração pode variar de 2 a 6 horas, conforme o estado da
+                        instalação e o número de divisões. É recomendável que o imóvel esteja desocupado durante a execução.
+                    </p>
+                    
+                    <div class="container-footer">
+                        <button matButton matStepperNext>Cancelar</button>
+                        <button matButton matStepperNext class="primaryButton">Agendar Serviço</button>
+                    </div>
                 </div>
-
-                <span class="cabecalho">
-                    <img src="icon/information.png" alt="">
-                    <p>O que está incluído</p>
-                </span>
-                <div>
-                    <span class="detalhes">
-                        <img src="icon/tick-circle.png" alt="">
-                        <div>
-                            <p class="title">Verificação e manutenção da instalação eléctrica</p>
-                            <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
-                        </div>
-                    </span>
-                    <span class="detalhes">
-                        <img src="icon/tick-circle.png" alt="">
-                        <div>
-                            <p class="title">Verificação e manutenção da instalação eléctrica</p>
-                            <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
-                        </div>
-                    </span>
-                    <span class="detalhes">
-                        <img src="icon/tick-circle.png" alt="">
-                        <div>
-                            <p class="title">Verificação e manutenção da instalação eléctrica</p>
-                            <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
-                        </div>
-                    </span>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" label="Pagamento">
+            <form [formGroup]="secondFormGroup">
+                <div class="container-second-step">
+                    <h1>Informações do pedido</h1>
+                    <p class="cont">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                    layout. The point of using.</p>
+                    
+                    <label for="dataMarcacao" class="containerInput">
+                        <input type="datetime-local" name="" id="dataMarcacao" placeholder="">
+                    </label>
+    
+                    <textarea name="" id="" placeholder="Detalhe mais sobre o serviço..."></textarea>
+    
+    
+                    <div class="container-footer">
+                        <button matButton matStepperPrevious>Cancelar</button>
+                        <button matButton matStepperNext class="primaryButton">Avança</button>
+                    </div>
+                    <div class="spacing"></div>
                 </div>
-
-                <span class="cabecalho">
-                    <img src="icon/information.png" alt="">
-                    <p>O que não está incluído</p>
-                </span>
-                <div>
-                    <span class="detalhes">
-                        <img src="icon/close-circle.png" alt="">
-                        <div>
-                            <p class="title">Verificação e manutenção da instalação eléctrica</p>
-                            <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
-                        </div>
-                    </span>
-                    <span class="detalhes">
-                        <img src="icon/close-circle.png" alt="">
-                        <div>
-                            <p class="title">Verificação e manutenção da instalação eléctrica</p>
-                            <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
-                        </div>
-                    </span>
-                    <span class="detalhes">
-                        <img src="icon/close-circle.png" alt="">
-                        <div>
-                            <p class="title">Verificação e manutenção da instalação eléctrica</p>
-                            <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
-                        </div>
-                    </span>
-                </div>
-
-                <div class="spacing"></div>
-                
-                <div class="container-footer">
-                    <button matButton matStepperNext>Cancelar</button>
-                    <button matButton matStepperNext class="primaryButton">Agendar Serviço</button>
-                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Concluír</ng-template>
+            <div class="lastContainer">
+                <img src="icon/check.png" alt="">
+                <h1>Solicitação feita com sucesso!</h1>
+                <p>Esse processo ficará em espera nos históricos e o <br> poderá terminar com o pagamento após a <br> execução do trabalho.</p>
+                <button routerLink="/" class="primaryButton">Finalizar</button>
             </div>
-        </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup" label="Pagamento">
-        <form [formGroup]="secondFormGroup">
-            <div class="container">
-                <h1>Informações do pedido</h1>
-                <p class="cont">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-                layout. The point of using.</p>
-                
-                <label for="dataMarcacao" class="containerInput">
-                    <input type="datetime-local" name="" id="dataMarcacao" placeholder="ojj">
-                </label>
-
-                <textarea name="" id="" placeholder="Detalhe mais sobre o serviço..."></textarea>
+        </mat-step>
+    </mat-stepper>
+</div>
 
 
-                <div class="container-footer">
-                    <button matButton matStepperPrevious>Cancelar</button>
-                    <button matButton matStepperNext class="primaryButton">Avança</button>
+<!-- ========================================================= 
+    Step para desktop
+-->
+
+<div class="container-descktop">
+    <div class="header">
+        <button (click)="back()"><img src="icon/back-icon.png" alt=""></button> <p>Seriços | Electricidade</p>
+    </div>
+    <h1>Instalação eléctrica completa</h1>
+
+    <div class="container">
+        <div class="container-service">
+            <button class="primaryButton" routerLink="/detalhes-solicitacao">Agendar Serviço</button>
+        
+            <span>
+                <p>Serviço</p>
+                <p>20.000,00 AOA</p>
+            </span>
+        
+            <span>
+                <p>Deslocação</p>
+                <p>Incluído</p>
+            </span>
+        
+            <span class="start-container">
+                <div class="stars">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
                 </div>
-                <div class="spacing"></div>
-            </div>
-        </form>
-    </mat-step>
-    <mat-step>
-        <ng-template matStepLabel>Concluír</ng-template>
-        <div class="lastContainer">
-            <img src="icon/check.png" alt="">
-            <h1>Solicitação feita com sucesso!</h1>
-            <p>Esse processo ficará em espera nos históricos e o poderá terminar com o pagamento após a execução do trabalho.</p>
-            <button matButton matStepperNext class="primaryButton">Avança</button>
+                <p class="avaliation">4,5(+200 Avaliações)</p>
+            </span>
+        
+            <span class="container-destaque">
+                <p>Total</p>
+                <p>20.000,00 AOA</p>
+            </span>
         </div>
-    </mat-step>
-</mat-stepper>
+
+        <div class="desc-service">
+            <span class="cabecalho">
+                <img src="icon/information.png" alt="">
+                <p>O que está incluído</p>
+            </span>
+            <div>
+                <span class="detalhes">
+                    <img src="icon/tick-circle.png" alt="">
+                    <div>
+                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                    </div>
+                </span>
+                <span class="detalhes">
+                    <img src="icon/tick-circle.png" alt="">
+                    <div>
+                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                    </div>
+                </span>
+                <span class="detalhes">
+                    <img src="icon/tick-circle.png" alt="">
+                    <div>
+                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                    </div>
+                </span>
+            </div>
+
+            <hr>
+        
+            <span class="cabecalho">
+                <img src="icon/information.png" alt="">
+                <p>O que não está incluído</p>
+            </span>
+            <div>
+                <span class="detalhes">
+                    <img src="icon/close-circle.png" alt="">
+                    <div>
+                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                    </div>
+                </span>
+                <span class="detalhes">
+                    <img src="icon/close-circle.png" alt="">
+                    <div>
+                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                    </div>
+                </span>
+                <span class="detalhes">
+                    <img src="icon/close-circle.png" alt="">
+                    <div>
+                        <p class="title">Verificação e manutenção da instalação eléctrica</p>
+                        <p>Garantia de segurança e funcionamento de todos os circuitos.</p>
+                    </div>
+                </span>
+            </div>
+            <hr>
+        </div>
+    </div>
+    
+    <p class="atention">
+        Nota: O serviço segue normas de segurança eléctrica. A duração pode variar de 2 a 6 horas, conforme o estado da
+        instalação e o número de divisões. É recomendável que o imóvel esteja desocupado durante a execução.
+    </p>
+    <hr>
+
+    <h1>Pesquisas relacionadas</h1>
+    <div class="container-op">
+        <button class="opcao">Limpeza Geral</button>
+        <button class="opcao">Passar Roupa</button>
+        <button class="opcao">Lavar Roupa</button>
+        <button class="opcao">Baba por um dia</button>
+        <button class="opcao">Eletricidade</button>
+        <button class="opcao">Cozinhar</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+
+<button (click)="changeState()">
+    <p>{{title}}</p>
+    <span>
+        <img [hidden]="state" src="icon/plus.png" alt="">
+        <img [hidden]="!state" src="icon/slash.png" alt="">
+    </span>
+</button>
+
+<p [hidden]="!state">{{subtitle}}</p>

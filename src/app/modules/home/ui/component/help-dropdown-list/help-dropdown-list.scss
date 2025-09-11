@@ -1,0 +1,39 @@
+:host{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    button{
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        cursor: pointer;
+        gap: 8px;
+
+        &:hover{
+            // background-color: #484854;
+        }
+        
+        p{
+            font-family: 'poppins-semibold';
+            color: #484854;
+        }
+
+        span{
+            width: 24px;
+            height: 24px;
+            background-color: #4784FE24;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+    }
+
+    p{
+        text-align: start;
+    }
+}

@@ -1,25 +1,29 @@
 <div class="container-detalhes">
-    <h1>Explore o nosso <br> catálogo de serviços</h1>
-    <p>O aplicativo que te ajudará a encontrar e solicitar todos os serviços imobiliários que precisas, economizando tempo e recurso</p>
+    <h1>Explore o nosso <br class="br-sm"> catálogo <br class="br-md"> de serviços</h1>
+    <p>O aplicativo que te ajudará a encontrar e solicitar todos <br class="br-md"> os serviços imobiliários que precisas, economizando <br class="br-md"> tempo e recurso</p>
 </div>
 
-<div class="container-filter">
+ <div class="container-filter">
     <div class="container-input-button">
         <div class="container-input"></div>
-        <button></button>
+        <button>Pesquisar</button>
     </div>
 
     <div class="filtros">
-        <button class="active">Todos</button>
-        <button>Eletricidade</button>
-        <button>Frio e climatização</button>
-        <button>Limpeza</button>
-        <button>Outros</button>
-        <button>Aleatórios</button>
-        <button>Testando</button>
+        <button class="active"> <span><img src="icon/broom.png" alt=""></span> Limpeza</button>
+        <button> <span><img src="icon/home-trend-up.png" alt=""></span>Reparações gerais</button>
+        <button><span><img src="icon/brush.png" alt=""></span>Pintura</button>
+        <button><span><img src="icon/building.png" alt=""></span>Jardinagem</button>
+         <button><span><img src="icon/home-trend-up.png" alt=""></span>Jardinagem</button>
+        <button><span><img src="icon/home-trend-up.png" alt=""></span>Jardinagem</button>
+        <button><span><img src="icon/home-trend-up.png" alt=""></span>Jardinagem</button>
+        <button><span><img src="icon/home-trend-up.png" alt=""></span>Jardinagem</button>
+        <button><span><img src="icon/home-trend-up.png" alt=""></span>Jardinagem</button>
+        <button><span><img src="icon/home-trend-up.png" alt=""></span>Jardinagem</button>
+
     </div>
 
-    <div class="container-detalhes">
+    <div class="container-detalhes mais-solicitados">
         <h1>Mais solicitados</h1>
         <p>O aplicativo que te ajudará a encontrar e solicitar todos os serviços imobiliários que precisas, economizando tempo e recurso</p>
     </div>
@@ -37,13 +41,20 @@
 
     <button class="main-button">Ver todos</button>
 
-    <div class="container-detalhes">
-        <h1>Com <span> três passos </span> <br class="brack"> simples resolva tarefas do dia a dia com a Kissalo</h1>
+    <div class="container-detalhes nossa-visao">
+        <h2>
+            <span></span>
+            Nossa visão
+        </h2>
+        <h1>Com <span> três passos </span> <br class="br-sm"> simples resolva tarefas do dia a dia com a Kissalo</h1>
     </div>
 
     <div class="container-tres-passos">
-        <img src="ilustration/tree_steps.png" alt="">
-        <img src="ilustration/step-baixar-app.png" alt="">
+        <img src="ilustration/tree_steps.png" alt="" class="img-md">
+        <img src="ilustration/step-baixar-app.png" alt="" class="img-md">
+
+        <img src="ilustration/tree_steps_lg.png" alt="" class="img-lg main">
+        <img src="ilustration/step-baixar-app-lg.png" alt="" class="img-lg minor">
     </div>
 
     <div class="testemunhos">
@@ -54,14 +65,65 @@
     
         <h1>O quê os nossos clientes dizem sobre nós?</h1>
     </div>
-</div>
+</div> 
 
 
 <div class="mockup">
-    <h1>Use a Kissalo em qualquer dispositivo!</h1>
-    <p>Agora ficou ainda mais fácil acessar nossos serviços! Com o nosso aplicativo, você pode solicitar limpeza, design,
-    tecnologia, eletricidade e muito mais de forma rápida e segura.</p>
-    <p>Tenha tudo ao seu alcance, onde e quando precisar. Baixe agora e aproveite a melhor experiência!</p>
-        
-    <img src="ilustration/mockup.png" alt="">
+    <div>
+        <h1>Use a Kissalo em qualquer dispositivo!</h1>
+        <p>Agora ficou ainda mais fácil acessar nossos serviços! Com o nosso aplicativo, você pode solicitar limpeza, design,
+        tecnologia, eletricidade e muito mais de forma rápida e segura.</p>
+        <p>Tenha tudo ao seu alcance, onde e quando precisar. Baixe agora e aproveite a melhor experiência!</p>
+    </div>
+    
+    <img class="mockupSm" src="ilustration/mockup.png" alt="">
+    <img class="mockupMd" src="ilustration/mockupMd.png" alt="">
+</div>
+
+<div class="duvidas">
+    <h1>Dúvidas frequentes</h1>
+    <h2>Selecionamos algumas questões que pode ser sua duvida.</h2>
+
+    <div>
+        <app-help-dropdown-list 
+            title="O meu pedido atrasou, o que devo fazer?" 
+            subtitle="Por questões legais todos os pagamentos feito pelos estudantes vão para as contas da plataforma, após a validação, aprovação e termino do curso (para os cursos presenciais), são feito os pagamentos para o formador." 
+        />
+        <app-help-dropdown-list 
+            title="Tive um problema com o meu pedido"
+            subtitle="Por questões legais todos os pagamentos feito pelos estudantes vão para as contas da plataforma, após a validação, aprovação e termino do curso (para os cursos presenciais), são feito os pagamentos para o formador." 
+        />
+    
+        <app-help-dropdown-list 
+            title="Fiz um pedido e me arrependi, posso cancelar?"
+            subtitle="Por questões legais todos os pagamentos feito pelos estudantes vão para as contas da plataforma, após a validação, aprovação e termino do curso (para os cursos presenciais), são feito os pagamentos para o formador." 
+        />
+    </div>
+</div>
+
+<div class="recursos">
+    <h2>
+        <span></span>
+        Recursos
+    </h2>
+
+    <div class="container">
+        <div class="badge-container">
+            <span class="badge"><img src="ilustration/user1.jpg" alt=""></span>
+            <span class="badge"><img src="ilustration/user2.jpg" alt=""></span>
+            <span class="badge"><img src="ilustration/user3.jpg" alt=""></span>
+            <span class="badge main-badge">
+                <img src="icon/arrow.png" alt="">
+            </span>
+    
+        </div>
+    
+        <h1>Ainda tem dúvidas?</h1>
+        <p>O aplicativo que te ajudará a encontrar e solicitar todos os serviços imobiliários que precisas, economizando tempo e
+        recurso</p>
+    
+        <button>Entrar em contacto <span><img src="icon/arrow.png" alt=""></span></button>
+    </div>
+
+
 </div>

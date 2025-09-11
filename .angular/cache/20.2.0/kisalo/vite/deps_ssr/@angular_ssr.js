@@ -14,12 +14,12 @@ import {
   setAngularAppManifest,
   withAppShell,
   withRoutes
-} from "./chunk-D5WD3IKA.js";
-import "./chunk-ANSYRYAT.js";
-import "./chunk-ARUU3YDR.js";
-import "./chunk-Z3MGMO7Y.js";
-import "./chunk-EQJ5WJFJ.js";
-import "./chunk-6DU2HRTW.js";
+} from "./chunk-5OPXQYUQ.js";
+import "./chunk-APIIXOIK.js";
+import "./chunk-L2KPZXGO.js";
+import "./chunk-BDKMSZXY.js";
+import "./chunk-56OE5JIV.js";
+import "./chunk-R3KN4MOR.js";
 export {
   AngularAppEngine,
   PrerenderFallback,

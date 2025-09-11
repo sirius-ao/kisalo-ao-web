@@ -4,32 +4,21 @@
     grid-template-rows: 68px 1fr;
     position: relative;
     background-color: #FFF;
-
+    
     header{
         width: 100vw;
         border-bottom: 1px solid #eeeded;
     }
-
+    
     main{
         width: 100vw;
-        // padding: 0 16px;
-        background-color: #FFF;
-
+        // background-color: #FFF;
+        
     }
 }
 
-@media screen and (min-width:600px) {
-    :host{
-        main{
-            padding:  0 24px;
-        }
-    }
-}
-
-@media screen and (min-width:700px) {
-    :host{
-        main{
-            padding:  0 40px;
-        }
+@media screen and (min-width:765px) {
+    :host {
+        grid-template-rows: 108px 1fr;
     }
 }
